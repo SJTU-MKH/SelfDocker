@@ -1,0 +1,9 @@
+docker run \
+-it \
+--net=host \
+--name go2 \
+-v ~/project/unitree_ros2:unitree_ros2 \
+-v /dev:/dev \
+-e DISPLAY=$DISPLAY \
+-v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+markhui/ros:foxy-go2 bash
